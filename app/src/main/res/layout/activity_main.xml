@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.league55.esp8266.views.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.02"
+        android:weightSum="1">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/operationsRadioGroup">
+
+        <RadioButton
+                android:text="light DOWN"
+                android:id="@+id/radioDOWN"
+                android:textSize="18sp"
+                android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:text="light UP"
+                android:id="@+id/radioUP"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:id="@+id/colorRadioGroup">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonGREEN"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_light"
+                    android:minHeight="178dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonBLUE"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_blue_light"
+                    android:minHeight="179dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonRED"
+                    android:layout_weight="1"
+                    android:elevation="14dp"
+                    android:background="@android:color/holo_red_light"
+                    android:minHeight="179dp" />
+            </RadioGroup>
+
+        <Button
+            android:text="Do the show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSendRequest"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
